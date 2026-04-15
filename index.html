@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta Tags -->
+  <title>Abdul Momin — CSE Student & Aspiring Developer</title>
+  <meta name="description" content="Abdul Momin - B.Tech CSE Student at BGSBU Rajouri. Software Developer skilled in Python, C++, Machine Learning and Data Analytics.">
+  <meta name="keywords" content="Abdul Momin, Software Developer, Python Developer, Data Analyst, BGSBU Rajouri, Kaiser Mohiuddin, Portfolio, Srinagar">
+  <meta name="author" content="Abdul Momin">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Abdul Momin — Aspiring Developer">
+  <meta property="og:description" content="Portfolio of Abdul Momin - B.Tech CSE Student and aspiring Software Developer">
+  <meta property="og:image" content="profile.jpg">
+  <meta property="og:url" content="https://abdulmomin.github.io">
+  <meta property="og:type" content="website">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abdul Momin Portfolio">
+  <meta name="twitter:description" content="Software Developer & Data Analyst Portfolio">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">AM</div>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">AM<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"      class="nav-link">About</a></li>
+        <li><a href="#education"  class="nav-link">Education</a></li>
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow g1"></div>
+    <div class="hero-glow g2"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up" style="--d:0.1s">
+        <span class="badge-dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-name reveal-up" style="--d:0.2s">
+        Abdul<br /><em>Momin</em>
+      </h1>
+      <div class="hero-title reveal-up" style="--d:0.35s">
+        <span id="typingText"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-intro reveal-up" style="--d:0.45s">
+        B.Tech CSE Student crafting intelligent solutions at the intersection of software engineering and data science.
+      </p>
+      <div class="hero-cta reveal-up" style="--d:0.55s">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-folder-open"></i> View Projects</a>
+        <a href="#contact"  class="btn btn-ghost"><i class="fa-solid fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero-stats reveal-up" style="--d:0.7s">
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">1</span><span class="stat-label">Internship</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">3rd</span><span class="stat-label">Year CSE</span></div>
+      </div>
+    </div>
+
+<div class="hero-visual reveal-right" style="--d:0.3s">
+  <div class="avatar-frame">
+    <img src="profile.jpeg" alt="Abdul Momin" class="avatar-image">
+    <div class="avatar-ring r1"></div>
+    <div class="avatar-ring r2"></div>
+    <div class="float-tag ft1"><i class="fa-brands fa-python"></i> Python</div>
+    <div class="float-tag ft2"><i class="fa-solid fa-robot"></i> ML</div>
+    <div class="float-tag ft3"><i class="fa-solid fa-database"></i> Data</div>
+  </div>
+</div>
+
+    <a href="#about" class="scroll-hint">
+      <span>Scroll</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">01 — About Me</div>
+      <h2 class="section-title reveal-up">The person<br /><em>behind the code</em></h2>
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p>Hello! I'm <strong>Abdul Momin</strong>, a passionate Computer Science and Engineering student (3rd Year) at <strong>Baba Ghulam Shah Badshah University, Rajouri</strong>. I enjoy solving real-world problems using technology and continuously strive to enhance my skills in software development and Data science.</p>
+          <p>With a strong foundation in <strong>Data Structures & Algorithms</strong>, I love building efficient and scalable solutions. I'm always curious to learn new technologies and apply them in innovative projects.</p>
+          <div class="about-chips">
+            <span class="chip"><i class="fa-solid fa-location-dot"></i> Srinagar, Kashmir</span>
+            <span class="chip"><i class="fa-solid fa-graduation-cap"></i> BGSBU Rajouri</span>
+            <span class="chip"><i class="fa-solid fa-laptop-code"></i> Open to Work</span>
+          </div>
+        </div>
+        <div class="about-cards reveal-right">
+          <div class="about-card">
+            <i class="fa-solid fa-code icon-teal"></i>
+            <h4>Developer</h4>
+            <p>Building efficient software solutions from scratch</p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-chart-line icon-amber"></i>
+            <h4>Data Analytics</h4>
+            <p>Turning raw data into meaningful insights</p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-brain icon-purple"></i>
+            <h4>AI / ML</h4>
+            <p>Exploring machine intelligence and applied models</p>
+          </div>
+          <div class="about-card">
+            <i class="fa-solid fa-puzzle-piece icon-pink"></i>
+            <h4>Problem Solver</h4>
+            <p>Analytical thinker with a logical approach</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">02 — Education</div>
+      <h2 class="section-title reveal-up">Academic<br /><em>Journey</em></h2>
+      <div class="timeline">
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022 — Present</div>
+            <h3>B.Tech — Computer Science & Engineering</h3>
+            <p class="timeline-inst"><i class="fa-solid fa-building-columns"></i> Baba Ghulam Shah Badshah University, Rajouri</p>
+            <p>Pursuing a comprehensive degree covering algorithms, data structures, databases, AI/ML, and software engineering principles.</p>
+            <span class="timeline-badge ongoing">Ongoing</span>
+          </div>
+        </div>
+        <div class="timeline-item reveal-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">Schooling</div>
+            <h3>Secondary Education</h3>
+            <p class="timeline-inst"><i class="fa-solid fa-school"></i> Tyndale Biscoe and Mallinson School (TBMES), Sheikh Bagh, Srinagar</p>
+            <p>Completed schooling with strong foundations in sciences and mathematics at one of Srinagar's most prestigious institutions.</p>
+            <span class="timeline-badge completed">Completed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">03 — Skills</div>
+      <h2 class="section-title reveal-up">Technical<br /><em>Arsenal</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal-up" style="--d:0.05s">
+          <div class="skill-icon"><i class="fa-solid fa-terminal"></i></div>
+          <h4>Programming</h4>
+          <div class="skill-tags"><span>C++</span><span>Python</span></div>
+          <div class="skill-bar"><span style="--w:80%"></span></div>
+        </div>
+        <div class="skill-card reveal-up" style="--d:0.15s">
+          <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+          <h4>Web Development</h4>
+          <div class="skill-tags"><span>HTML5</span><span>CSS3</span></div>
+          <div class="skill-bar"><span style="--w:75%"></span></div>
+        </div>
+        <div class="skill-card reveal-up" style="--d:0.25s">
+          <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+          <h4>Core CS</h4>
+          <div class="skill-tags"><span>DSA</span><span>Algorithms</span></div>
+          <div class="skill-bar"><span style="--w:70%"></span></div>
+        </div>
+        <div class="skill-card reveal-up" style="--d:0.35s">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h4>Database</h4>
+          <div class="skill-tags"><span>SQL</span><span>DBMS</span></div>
+          <div class="skill-bar"><span style="--w:65%"></span></div>
+        </div>
+        <div class="skill-card reveal-up" style="--d:0.45s">
+          <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+          <h4>AI / ML</h4>
+          <div class="skill-tags"><span>Machine Learning</span><span>OpenCV</span></div>
+          <div class="skill-bar"><span style="--w:60%"></span></div>
+        </div>
+        <div class="skill-card reveal-up" style="--d:0.55s">
+          <div class="skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+          <h4>Soft Skills</h4>
+          <div class="skill-tags"><span>Problem Solving</span><span>Analytical</span></div>
+          <div class="skill-bar"><span style="--w:90%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">04 — Experience</div>
+      <h2 class="section-title reveal-up">Work<br /><em>Experience</em></h2>
+      <div class="exp-card reveal-up">
+        <div class="exp-left">
+          <div class="exp-logo"><i class="fa-solid fa-microchip"></i></div>
+        </div>
+        <div class="exp-right">
+          <div class="exp-header">
+            <div>
+              <h3>AI & ML Intern</h3>
+              <p class="exp-company">Winnovation</p>
+            </div>
+            <span class="exp-type">Internship</span>
+          </div>
+          <ul class="exp-points">
+            <li><i class="fa-solid fa-arrow-right"></i> Gained hands-on experience in Artificial Intelligence and Machine Learning techniques</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Worked on real-world problem solving using data-driven approaches</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Applied ML algorithms to build and evaluate predictive models</li>
+            <li><i class="fa-solid fa-arrow-right"></i> Collaborated on projects that bridged theoretical knowledge and industry application</li>
+          </ul>
+          <div class="exp-tech">
+            <span>Python</span><span>Machine Learning</span><span>Data Analysis</span><span>AI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ░░ PROJECTS ░░ -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="section-label reveal-up">05 — Projects</div>
+    <h2 class="section-title reveal-up">Built &<br /><em>Shipped</em></h2>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card reveal-up" style="--d:0.1s">
+        <div class="project-top">
+          <div class="project-icon p1"><i class="fa-solid fa-car"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Lonekaiser04/Number-plate-detection" class="project-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>License Plate Detection System</h3>
+        <p>
+          An intelligent computer vision system that detects and reads vehicle license plates using OCR and image processing techniques. Includes blacklist verification for security applications.
+        </p>
+
+        <!-- CREDIT -->
+        <p class="project-credit">
+          Under the leadership of 
+          <a href="https://kaisermohiuddin.me" target="_blank">Kaiser Mohiuddin</a>
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span><span>OpenCV</span><span>OCR</span><span>Computer Vision</span>
+        </div>
+        <div class="project-hover-bar"></div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card reveal-up" style="--d:0.25s">
+        <div class="project-top">
+          <div class="project-icon p2"><i class="fa-solid fa-heartbeat"></i></div>
+          <div class="project-links">
+            <a href="#" class="project-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Diabetes Detection System</h3>
+        <p>
+          A machine learning powered health prediction system that analyzes medical parameters to detect the likelihood of diabetes in patients with high accuracy.
+        </p>
+
+        <div class="project-tech">
+          <span>Python</span><span>ML</span><span>Scikit-learn</span><span>Data Science</span>
+        </div>
+        <div class="project-hover-bar"></div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card reveal-up" style="--d:0.4s">
+        <div class="project-top">
+          <div class="project-icon p3"><i class="fa-solid fa-book-open"></i></div>
+          <div class="project-links">
+            <a href="https://github.com/Lonekaiser04/Library-Management-System" class="project-link" title="View Project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <h3>Library Management System</h3>
+        <p>
+          A full-featured library management application enabling book tracking, member management, issue/return operations, and automated fine calculation with a clean interface.
+        </p>
+
+        <!-- CREDIT -->
+        <p class="project-credit">
+          Under the leadership of 
+          <a href="https://kaisermohiuddin.me" target="_blank">Kaiser Mohiuddin</a>
+        </p>
+
+        <div class="project-tech">
+          <span>C++</span><span>Database</span><span>OOP</span><span>DSA</span>
+        </div>
+        <div class="project-hover-bar"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- HOBBIES -->
+  <section id="hobbies" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">06 — Hobbies</div>
+      <h2 class="section-title reveal-up">Beyond the<br /><em>Screen</em></h2>
+      <div class="hobbies-grid">
+        <div class="hobby-card reveal-up" style="--d:0.1s">
+          <div class="hobby-icon"><i class="fa-solid fa-person-swimming"></i></div>
+          <h4>Swimming</h4>
+          <p>Staying active and disciplined in the water</p>
+        </div>
+        <div class="hobby-card reveal-up" style="--d:0.25s">
+          <div class="hobby-icon"><i class="fa-solid fa-futbol"></i></div>
+          <h4>Football</h4>
+          <p>Team sport that sharpens coordination & strategy</p>
+        </div>
+        <div class="hobby-card reveal-up" style="--d:0.4s">
+          <div class="hobby-icon"><i class="fa-solid fa-baseball-bat-ball"></i></div>
+          <h4>Cricket</h4>
+          <p>The gentleman's game — patience meets precision</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRENGTHS -->
+  <section id="strengths" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">07 — Strengths</div>
+      <h2 class="section-title reveal-up">Core<br /><em>Strengths</em></h2>
+      <div class="strengths-grid">
+        <div class="strength-item reveal-up" style="--d:0.05s">
+          <div class="strength-num">01</div>
+          <i class="fa-solid fa-chess-knight"></i>
+          <h4>Strong Problem-Solving Mindset</h4>
+          <p>Approaching challenges with logic, creativity, and persistence to find optimal solutions.</p>
+        </div>
+        <div class="strength-item reveal-up" style="--d:0.2s">
+          <div class="strength-num">02</div>
+          <i class="fa-solid fa-bolt"></i>
+          <h4>Quick Learner & Adaptable</h4>
+          <p>Rapidly absorbing new technologies and adapting to evolving environments with ease.</p>
+        </div>
+        <div class="strength-item reveal-up" style="--d:0.35s">
+          <div class="strength-num">03</div>
+          <i class="fa-solid fa-fire"></i>
+          <h4>Dedicated & Hardworking</h4>
+          <p>Bringing full commitment and work ethic to every task and project undertaken.</p>
+        </div>
+        <div class="strength-item reveal-up" style="--d:0.5s">
+          <div class="strength-num">04</div>
+          <i class="fa-solid fa-people-group"></i>
+          <h4>Team Player</h4>
+          <p>Collaborating effectively with strong communication skills to achieve shared goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREER GOAL -->
+  <section id="goal" class="section section-alt">
+    <div class="container">
+      <div class="goal-block reveal-up">
+        <div class="goal-icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="section-label">Career Goal</div>
+        <blockquote>
+          "I aspire to become a skilled software developer and contribute to innovative projects in the tech industry while continuously growing my knowledge in AI, ML, and software engineering."
+        </blockquote>
+        <p class="goal-name">— Abdul Momin</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">08 — Contact</div>
+      <h2 class="section-title reveal-up">Let's<br /><em>Connect</em></h2>
+      <p class="contact-intro reveal-up">Have a project in mind or an opportunity to share? Feel free to reach out through any of the channels below.</p>
+      <div class="contact-cards reveal-up" style="--d:0.2s">
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="cc-label">Location</div>
+          <div class="cc-value">Srinagar, Kashmir, India</div>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="cc-label">Phone</div>
+          <a href="tel:6006037011" class="cc-value">6006037011</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="cc-label">Email</div>
+          <a href="mailto:mominabdul3952@gmail.com" class="cc-value">mominabdul3952@gmail.com</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <div class="cc-label">LinkedIn</div>
+          <a href="#" class="cc-value">Connect on LinkedIn</a>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon"><i class="fa-brands fa-github"></i></div>
+          <div class="cc-label">GitHub</div>
+          <a href="#" class="cc-value">View my GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#hero" class="footer-logo">AM<span class="dot">.</span></a>
+        <p>B.Tech CSE Student | Developer | Data Analytics</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mominabdul3952@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Abdul Momin. All rights reserved.</p>
+      </div>
+
+      <div style="text-align: center;">
+        <p style="font-size: small;">Developed under the guidance of <a href = "https://kaisermohiuddin.me"><b style="color: rgb(133, 213, 133);">Kaiser Mohiuddin</b></a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
